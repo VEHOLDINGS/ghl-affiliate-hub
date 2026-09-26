@@ -214,7 +214,7 @@ export default async function BlogPostPage({ params }: Props) {
           name: post.title,
           description: post.description,
           url,
-          primaryImageOfPage: { "@type": "ImageObject", url: `${SITE_URL}/og-default.png` },
+          primaryImageOfPage: { "@type": "ImageObject", url: `${SITE_URL}/og-image.png` },
         }}
       />
     </>
