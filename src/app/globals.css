@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-800 antialiased;
+}
+
+/* ---- Blog article typography (markdown output) ---- */
+.article-body {
+  @apply text-lg leading-relaxed text-slate-700;
+}
+.article-body h2 {
+  @apply mt-12 mb-4 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl;
+}
+.article-body h3 {
+  @apply mt-8 mb-3 text-xl font-semibold text-slate-900;
+}
+.article-body p {
+  @apply my-5;
+}
+.article-body a {
+  @apply font-medium text-brand-700 underline decoration-brand-300 underline-offset-2 transition hover:text-brand-800 hover:decoration-brand-500;
+}
+.article-body ul {
+  @apply my-5 list-disc space-y-2 pl-6;
+}
+.article-body ol {
+  @apply my-5 list-decimal space-y-2 pl-6;
+}
+.article-body li {
+  @apply leading-relaxed;
+}
+.article-body li > ul,
+.article-body li > ol {
+  @apply my-2;
+}
+.article-body blockquote {
+  @apply my-6 border-l-4 border-brand-400 bg-brand-50/70 px-5 py-4 text-slate-700 italic;
+}
+.article-body table {
+  @apply my-6 w-full border-collapse overflow-hidden rounded-xl border border-slate-200 text-left text-base;
+}
+.article-body th {
+  @apply border border-slate-200 bg-slate-50 px-4 py-2.5 font-semibold text-slate-900;
+}
+.article-body td {
+  @apply border border-slate-200 px-4 py-2.5 align-top;
+}
+.article-body strong {
+  @apply font-semibold text-slate-900;
+}
+.article-body hr {
+  @apply my-10 border-slate-200;
+}
+
+/* ---- FAQ accordion ---- */
+details.faq-item > summary {
+  @apply cursor-pointer list-none;
+}
+details.faq-item > summary::-webkit-details-marker {
+  display: none;
+}
+details.faq-item[open] .faq-chevron {
+  @apply rotate-180;
+}
