@@ -5,16 +5,21 @@
 
 export const SITE_NAME = "GHL Affiliate Hub";
 
+const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://ghl-affiliate-hub.vercel.app";
+  rawSiteUrl && rawSiteUrl.length > 0
+    ? rawSiteUrl
+    : "https://ghl-affiliate-hub.vercel.app";
 
 export const SITE_DESCRIPTION =
   "Independent GoHighLevel pricing, plan comparisons, and reviews. See GHL's Starter, Unlimited, and SaaS Pro plans side by side, compare ClickFunnels, Kajabi & Kartra, and start a 14-day free trial.";
 
 /** Main referral link — used by every "Start Free Trial" CTA. */
+const rawAffiliateUrl = process.env.NEXT_PUBLIC_GHL_AFFILIATE_URL?.trim();
 export const AFFILIATE_URL =
-  process.env.NEXT_PUBLIC_GHL_AFFILIATE_URL ??
-  "https://www.gohighlevel.com/pricing?fp_ref=victor-b364be";
+  rawAffiliateUrl && rawAffiliateUrl.length > 0
+    ? rawAffiliateUrl
+    : "https://www.gohighlevel.com/pricing?fp_ref=victor-b364be";
 
 /** Where the "join the affiliate program" CTA points. */
 export const AFFILIATE_PROGRAM_URL = "https://www.gohighlevel.com/affiliates";
