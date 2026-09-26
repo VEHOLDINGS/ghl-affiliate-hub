@@ -95,7 +95,7 @@ For any other host: `npm run build` and serve the `.next` output with `npm start
 ## 📌 Content & compliance notes
 
 - Pricing/features verified **September 2026** (GoHighLevel: $97 / $297 / $497 per month; 14-day trial). Re-verify before launch and keep the disclosure in the footer accurate.
-- The testimonial section uses **illustrative placeholder quotes** — replace with real, verifiable testimonials before commercial launch.
+- ~~Testimonial placeholders~~ **Replaced** with a verifiable research-methodology trust section (`src/components/TrustSection.tsx`) — no fabricated quotes.
 - Competitor pricing/feature cells are summarized from public sources with a dated footnote; update periodically.
 - The footer contains the required affiliate disclosure; keep it (FTC compliance).
 

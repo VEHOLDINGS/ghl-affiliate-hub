@@ -4,7 +4,7 @@ import { PricingTable } from "@/components/PricingTable";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { HowItWorks } from "@/components/HowItWorks";
 import { AffiliateSection } from "@/components/AffiliateSection";
-import { Testimonials } from "@/components/Testimonials";
+import { TrustSection } from "@/components/TrustSection";
 import { BlogTeaser } from "@/components/BlogTeaser";
 import { Faq } from "@/components/Faq";
 import { FinalCta } from "@/components/FinalCta";
@@ -36,7 +36,7 @@ export default function HomePage() {
       <ComparisonTable />
       <HowItWorks />
       <AffiliateSection />
-      <Testimonials />
+      <TrustSection />
       <BlogTeaser />
       <Faq />
       <FinalCta />
