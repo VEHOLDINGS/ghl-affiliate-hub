@@ -14,7 +14,7 @@ export const SITE_DESCRIPTION =
 /** Main referral link — used by every "Start Free Trial" CTA. */
 export const AFFILIATE_URL =
   process.env.NEXT_PUBLIC_GHL_AFFILIATE_URL ??
-  "https://www.gohighlevel.com/?ref=YOUR-AFFILIATE-ID";
+  "https://www.gohighlevel.com/pricing?fp_ref=victor-b364be";
 
 /** Where the "join the affiliate program" CTA points. */
 export const AFFILIATE_PROGRAM_URL = "https://www.gohighlevel.com/affiliates";

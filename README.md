@@ -48,7 +48,7 @@ Copy `.env.example` to `.env.local` and set:
 | `NEXT_PUBLIC_SITE_URL` | Canonical origin for sitemap, OG tags, JSON-LD (no trailing slash) |
 | `NEXT_PUBLIC_GHL_AFFILIATE_URL` | **Your GoHighLevel referral link** — used by every CTA |
 
-> **Before launch:** replace `YOUR-AFFILIATE-ID` (or the whole URL) with your real affiliate link, and update `AFFILIATE_PROGRAM_URL` in `src/lib/site.ts` if needed.
+> **Referral link:** every CTA routes through `AFFILIATE_URL` in `src/lib/site.ts`, set to `https://www.gohighlevel.com/pricing?fp_ref=victor-b364be` (overridable via `NEXT_PUBLIC_GHL_AFFILIATE_URL`). Double-check `AFFILIATE_PROGRAM_URL` in the same file points to your preferred affiliate signup page.
 
 ## 📁 Project structure
 
